@@ -18,6 +18,10 @@ class Pancake extends React.Component {
   };
 }
 
+componentWillUnmount() {
+  this.cleanUpInterval()
+}
+
   // TODO: create a componentWillUnmount() which will clear the interval
 
   updateCounter = () => {
